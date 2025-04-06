@@ -1,0 +1,14 @@
+graph TD
+    RACK[Mechanical Rack Assembly]:::project
+    PSU[Power Supply Module]:::project
+    NOISE[White Noise Generator]:::project
+
+    RACK --> PSU --> NOISE
+
+    classDef project fill:#d9b3ff,stroke:#333;
+
+    %% Clickable links
+    click RACK "project/01-mechanical-rack/README.md"
+    click PSU "project/02-power-supply/README.md"
+    click NOISE "project/03-white-noise-generator/README.md"
+
