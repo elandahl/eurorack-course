@@ -17,6 +17,8 @@ graph TD
 
     %% Tools
     KICAD[KiCAD Circuit Board Design]:::tool
+    LASER[Laser Cutting]:::tool
+    FACEPLATE[Faceplate Design]:::tool
 
     %% Project Dependencies
     RACK --> NOISE
@@ -39,6 +41,11 @@ graph TD
     FILTERS --> VCA
     FILTERS --> ADVFILTER
 
+    %% Tool dependencies
+    LASER --> RACK
+    LASER --> FACEPLATE
+    FACEPLATE --> VCA
+
     classDef project fill:#d9b3ff,stroke:#333;
     classDef concept fill:#ccffcc,stroke:#333;
     classDef tool fill:#ffe6cc,stroke:#333;
@@ -57,4 +64,5 @@ graph TD
     click AC "https://github.com/elandahl/eurorack-course/blob/main/content/03-ac-circuits/README.md"
     click FILTERS "https://github.com/elandahl/eurorack-course/blob/main/content/04-ac-equivalent-circuits-and-filters/README.md"
     click ADVFILTER "https://github.com/elandahl/eurorack-course/blob/main/content/05-advanced-filter-theory/README.md"
-
+    click LASER "https://github.com/elandahl/eurorack-course/blob/main/tools/laser-cutting/README.md"
+    click FACEPLATE "https://github.com/elandahl/eurorack-course/blob/main/tools/faceplate-design/README.md"
