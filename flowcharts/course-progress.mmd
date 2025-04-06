@@ -2,13 +2,28 @@ graph TD
     RACK[Mechanical Rack Assembly]:::project
     PSU[Power Supply Module]:::project
     NOISE[White Noise Generator]:::project
+    ADSR[ADSR Envelope Generator]:::project
+    VCA[VCA Module]:::project
+    VCO[VCO Module]:::project
 
-    RACK --> PSU --> NOISE
+    %% Independent base modules
+    RACK --> NOISE
+    PSU --> NOISE
+    RACK --> ADSR
+    PSU --> ADSR
+
+    %% Subsequent dependencies
+    NOISE --> VCA
+    ADSR --> VCA
+    VCA --> VCO
 
     classDef project fill:#d9b3ff,stroke:#333;
 
-    %% Clickable links using full GitHub URLs for direct rendering
-    click RACK "https://github.com/elandahl/eurorack-course/blob/main/project/01-mechanical-rack/README.md" "View mechanical rack module"
-    click PSU "https://github.com/elandahl/eurorack-course/blob/main/project/02-power-supply/README.md" "View power supply module"
-    click NOISE "https://github.com/elandahl/eurorack-course/blob/main/project/03-white-noise-generator/README.md" "View white noise generator module"
+    %% Clickable links using full GitHub URLs
+    click RACK "https://github.com/elandahl/eurorack-course/blob/main/project/01-mechanical-rack/README.md"
+    click PSU "https://github.com/elandahl/eurorack-course/blob/main/project/02-power-supply/README.md"
+    click NOISE "https://github.com/elandahl/eurorack-course/blob/main/project/03-white-noise-generator/README.md"
+    click ADSR "https://github.com/elandahl/eurorack-course/blob/main/project/04-adsr/README.md"
+    click VCA "https://github.com/elandahl/eurorack-course/blob/main/project/05-vca/README.md"
+    click VCO "https://github.com/elandahl/eurorack-course/blob/main/project/06-vco/README.md"
 
