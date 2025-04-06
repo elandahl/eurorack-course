@@ -12,6 +12,14 @@ The full schematic and PCB design files are available in the GitHub repository b
 
 ---
 
+## 📋 Bill of Materials (BOM)
+
+The complete list of mechanical and electrical components needed to build the power supply is available in this Google Sheet:
+
+🔗 [Power Supply BOM (Google Sheets)](https://docs.google.com/spreadsheets/d/1b7PbrOKhUk41_MeSXmjowOyH94EjLhygskHuN2ZA3W4/edit?usp=sharing)
+
+---
+
 ## 🖼️ Step-by-Step Assembly Photos
 
 The complete step-by-step photo series showing the build process—with commentary—is available on Google Drive.  
@@ -75,10 +83,53 @@ These short videos walk through the theory and operation of AC-to-DC conversion,
 
 ---
 
-## 🧾 Faceplate Fabrication Files
+# Power Supply Faceplate Files
 
-*Coming soon:* This section will contain files for laser cutting or 3D printing the faceplate.  
-🗂️ `faceplate-design/` directory will be added with DXF/SVG files and layout notes.
+This folder contains all files related to the faceplate for the ±12V Eurorack power supply module.
+
+---
+
+## 📁 File Overview
+
+### `source/`
+Editable source files:
+- `EurorackPS_Panel.svg` — base vector design for editing
+- `EurorackPS_Panel.pdf` — printable or reference version
+- `PowerSupplyPanelTiled.ai` — full Adobe Illustrator version
+
+### `laser-ready/`
+Optimized files for laser cutting:
+- `powersupplycut.svg` — cutting outline
+- `powersupplyetch.svg` — etched design (text, symbols)
+
+> ✅ These files should be color-coded for laser software (e.g., red = cut, black = etch)
+
+### `tiled/`
+Files broken into printable, tiled layouts for large-scale print:
+- `EurorackPS_PanelTiled.pdf`
+- `PowerSupplyPanelTiled.pdf`
+- `PowerSupplyPanelTiled.svg`
+
+Use these to print on standard A4 or US Letter paper, tape together, and use as a cutting or etching guide.
+
+### `labels/`
+Optional faceplate labeling files:
+- Editable PowerPoint and PNG/PDF exports
+- Useful for prototyping or labeling panels before cutting
+
+---
+
+## 📐 Instructions
+
+### To Laser Cut:
+1. Use **`powersupplycut.svg`** for cutting outlines.
+2. Use **`powersupplyetch.svg`** for etching labels or graphics.
+3. Import into laser cutter software and assign appropriate line colors/layers.
+
+### To Print & Assemble:
+1. Open `*.Tiled.pdf` files in any PDF viewer
+2. Print at 100% scale on standard paper
+3. Tape pages together for full-size template
 
 ---
 
