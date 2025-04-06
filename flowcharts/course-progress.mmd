@@ -1,29 +1,60 @@
 graph TD
+    %% Project Modules
     RACK[Mechanical Rack Assembly]:::project
     PSU[Power Supply Module]:::project
     NOISE[White Noise Generator]:::project
     ADSR[ADSR Envelope Generator]:::project
     VCA[VCA Module]:::project
     VCO[VCO Module]:::project
+    CUSTOM[Custom Module]:::project
 
-    %% Independent base modules
+    %% Conceptual Foundations
+    DC[DC Equivalent Circuits]:::concept
+    OPAMP[Op-Amps]:::concept
+    AC[AC Circuits]:::concept
+    FILTERS[AC Equivalent Circuits & Filters]:::concept
+    ADVFILTER[Advanced Filter Theory]:::concept
+
+    %% Tools
+    KICAD[KiCAD Circuit Board Design]:::tool
+
+    %% Project Dependencies
     RACK --> NOISE
     PSU --> NOISE
     RACK --> ADSR
     PSU --> ADSR
-
-    %% Subsequent dependencies
     NOISE --> VCA
     ADSR --> VCA
     VCA --> VCO
+    VCO --> CUSTOM
+    KICAD --> CUSTOM
+
+    %% Concept Dependencies
+    DC --> OPAMP
+    OPAMP --> NOISE
+    OPAMP --> ADSR
+    OPAMP --> AC
+    AC --> PSU
+    AC --> FILTERS
+    FILTERS --> VCA
+    FILTERS --> ADVFILTER
 
     classDef project fill:#d9b3ff,stroke:#333;
+    classDef concept fill:#ccffcc,stroke:#333;
+    classDef tool fill:#ffe6cc,stroke:#333;
 
-    %% Clickable links using full GitHub URLs
+    %% Clickable links to README.md files
     click RACK "https://github.com/elandahl/eurorack-course/blob/main/project/01-mechanical-rack/README.md"
     click PSU "https://github.com/elandahl/eurorack-course/blob/main/project/02-power-supply/README.md"
     click NOISE "https://github.com/elandahl/eurorack-course/blob/main/project/03-white-noise-generator/README.md"
     click ADSR "https://github.com/elandahl/eurorack-course/blob/main/project/04-adsr/README.md"
     click VCA "https://github.com/elandahl/eurorack-course/blob/main/project/05-vca/README.md"
     click VCO "https://github.com/elandahl/eurorack-course/blob/main/project/06-vco/README.md"
+    click CUSTOM "https://github.com/elandahl/eurorack-course/blob/main/project/07-custom-module/README.md"
+    click KICAD "https://github.com/elandahl/eurorack-course/blob/main/project/kicad-board-design/README.md"
+    click DC "https://github.com/elandahl/eurorack-course/blob/main/content/01-dc-equivalent-circuits/README.md"
+    click OPAMP "https://github.com/elandahl/eurorack-course/blob/main/content/02-op-amps/README.md"
+    click AC "https://github.com/elandahl/eurorack-course/blob/main/content/03-ac-circuits/README.md"
+    click FILTERS "https://github.com/elandahl/eurorack-course/blob/main/content/04-ac-equivalent-circuits-and-filters/README.md"
+    click ADVFILTER "https://github.com/elandahl/eurorack-course/blob/main/content/05-advanced-filter-theory/README.md"
 
