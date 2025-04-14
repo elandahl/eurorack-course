@@ -22,14 +22,14 @@ This module covers the physical assembly of your Eurorack modular synth case. St
 
 ## 🖨️ Laser Cut Side Panels
 
-Laser cutting files are provided in the [`sides/`](./sides/) folder. These include SVGs for the laser cutter, preview PNGs, and SCAD (OpenSCAD) files for parametric editing.
+Laser cutting files are provided in this folder. These include SVGs for the laser cutter, preview PNGs, and SCAD (OpenSCAD) files for parametric editing.
 
 ### Files:
 
 - **[`Eurorack_2D_2.0_12-24-20.svg`](Eurorack_2D_2.0_12-24-20.svg)**  
   Recommended side panel design for cutting  
   Each piece is approximately 6.25" x 6.5"
-  The pieces should be placed with angled pieces facing each other to fit on a single plexiglass piece
+  The pieces should be placed with angled pieces facing each other to fit close.
   Save the extra plastic to cut your other modules later
 - **Eurorack_2D_1.0_12-6-20.svg / .png / .scad**  
   Earlier versions
