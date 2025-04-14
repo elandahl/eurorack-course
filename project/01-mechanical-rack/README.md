@@ -26,8 +26,11 @@ Laser cutting files are provided in the [`sides/`](./sides/) folder. These inclu
 
 ### Files:
 
-- **Eurorack_2D_2.0_12-24-20.svg**  
+- **[`Eurorack_2D_2.0_12-24-20.svg`](Eurorack_2D_2.0_12-24-20.svg)**  
   Recommended side panel design for cutting  
+  Each piece is approximately 6.25" x 6.5"
+  The pieces should be placed with angled pieces facing each other to fit on a single plexiglass piece
+  Save the extra plastic to cut your other modules later
 - **Eurorack_2D_1.0_12-6-20.svg / .png / .scad**  
   Earlier versions
 - **Eurorack_6_commonvector.svg**  
