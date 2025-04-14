@@ -27,6 +27,16 @@ Please make sure to view the photos **in filename order**, not by date or size.
 
 📷 [Assembly Photo Guide (Google Drive)](https://drive.google.com/drive/folders/1MFKs9yY7JbWpQMuoOoF2VS_3eF_-2qRc?usp=sharing)
 
+
+---
+## Cable Assembly
+
+The red stripe should always go to -12 V.  
+[Video of assembly](https://youtu.be/VU46qr5E5Zo?si=FZeEVR2H-ak2IcmH&t=1308)
+
+We use the 10-pin variety of the cable in this class, which carries only -12 V, 0V, and +12 V.
+[Pinout of connector](https://www.davidhaillant.com/how-to-link-16-pin-eurorack-power-connector-to-10-pin-connector/)
+
 ---
 
 ## 🎥 Lecture Videos: Understanding the Power Supply
