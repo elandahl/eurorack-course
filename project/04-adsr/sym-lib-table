@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name "VCO-eagle-import")(type "Legacy")(uri "${KIPRJMOD}/VCO-eagle-import.lib")(options "")(descr ""))
+  (lib (name "sequencer-rescue")(type "Legacy")(uri "${KIPRJMOD}/sequencer-rescue.lib")(options "")(descr ""))
+  (lib (name "ADSR_SR_2-26-21-rescue")(type "Legacy")(uri "${KIPRJMOD}/ADSR_SR_2-26-21-rescue.lib")(options "")(descr ""))
+)

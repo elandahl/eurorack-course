@@ -1,0 +1,18 @@
+"Id";"Designator";"Package";"Quantity";"Designation";"Supplier and ref";
+1;"REF**,REF**";"MountingHole_2.5mm_Pad_TopOnly";2;"MountingHole_2.5mm_Pad_TopOnly";;;
+2;"SV1";"IDC-Header_2x05_P2.54mm_Latch_Vertical";1;"ML10";;;
+3;"R17,R16,R15,R14,R13,R12,R11,R10,R4";"R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal";9;"2.2k";;;
+4;"R5";"R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal";1;"51k";;;
+5;"R3";"R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal";1;"100k";;;
+6;"R2";"R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal";1;"10k";;;
+7;"R1";"R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal";1;"1k";;;
+8;"POT17,POT16,POT15,POT14,POT13,POT12,POT11,POT10,POT1";"Potentiometer_Alpha_RD901F-40-00D_Single_Vertical";9;"100k";;;
+9;"J5,J4";"PinHeader_1x10_P2.54mm_Vertical";2;"Conn_01x10";;;
+10;"J3,J2,J1";"Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles";3;"AudioJack2_Ground";;;
+11;"IC2";"DIP-16_W7.62mm_Socket";1;"4017";;;
+12;"IC1";"DIP-8_W7.62mm";1;"555N";;;
+13;"D37,D36,D35,D34,D33,D32,D31,D30,D27,D26,D25,D24,D23,D22,D21,D20,D2";"D_T-1_P10.16mm_Horizontal";17;"D";;;
+14;"D17,D16,D15,D14,D13,D12,D11,D10,D1";"LED_Oval_W5.2mm_H3.8mm";9;"LED";;;
+15;"C9,C8,C7,C6,C5,C2";"C_Rect_L7.0mm_W2.0mm_P5.00mm";6;"10nF";;;
+16;"C4,C1";"CP_Radial_D5.0mm_P2.00mm";2;"10uF";;;
+17;"C3";"CP_Radial_D5.0mm_P2.00mm";1;"22uF";;;

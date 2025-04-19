@@ -1,0 +1,1411 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr B 17000 11000
+encoding utf-8
+Sheet 1 1
+Title "Baby 8-step sequencer"
+Date ""
+Rev ""
+Comp "DePaul University, PHY 231"
+Comment1 "Eric Landahl, Instructor"
+Comment2 "http://electro-music.com/forum/phpbb-files/baby10_sch_212.jpg"
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	2750 2400 2750 2300
+Wire Wire Line
+	2750 1600 2750 1700
+Wire Wire Line
+	2100 1700 2400 1700
+Connection ~ 2100 1700
+Text Label 2100 1700 0    10   ~ 0
++15V
+Wire Wire Line
+	2100 2300 2400 2300
+Connection ~ 2100 2300
+Wire Wire Line
+	3350 2100 3350 2000
+Wire Wire Line
+	3350 2000 3350 1900
+Wire Wire Line
+	3350 1900 2750 1900
+Wire Wire Line
+	2750 1900 2750 2000
+Wire Wire Line
+	2750 2100 2750 2000
+Wire Wire Line
+	2400 2000 2100 2000
+Wire Wire Line
+	2750 2000 3350 2000
+Wire Wire Line
+	3350 2000 3850 2000
+Connection ~ 2100 2000
+Connection ~ 2400 2000
+Connection ~ 2750 1900
+Connection ~ 2750 2000
+Connection ~ 3350 2000
+Connection ~ 3350 1900
+Text Label 3350 2100 0    10   ~ 0
+GND
+$Comp
+L sequencer-rescue:ML10-VCO-eagle-import SV1
+U 1 1 6F54BB83
+P 3050 2000
+F 0 "SV1" H 2900 2330 59  0000 L BNN
+F 1 "ML10" H 2900 1600 59  0000 L BNN
+F 2 "Connector_IDC:IDC-Header_2x05_P2.54mm_Latch_Vertical" H 3050 2000 50  0001 C CNN
+F 3 "" H 3050 2000 50  0001 C CNN
+	1    3050 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L sequencer-rescue:C-EUC0805K-VCO-eagle-import C8
+U 1 1 8EA4FDCE
+P 2400 1800
+F 0 "C8" H 2460 1815 59  0000 L BNN
+F 1 "10nF" H 2460 1615 59  0000 L BNN
+F 2 "Capacitor_THT:C_Rect_L7.0mm_W2.0mm_P5.00mm" H 2400 1800 50  0001 C CNN
+F 3 "" H 2400 1800 50  0001 C CNN
+	1    2400 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L sequencer-rescue:C-EUC0805K-VCO-eagle-import C9
+U 1 1 2222F638
+P 2400 2100
+F 0 "C9" H 2460 2115 59  0000 L BNN
+F 1 "10nF" H 2460 1915 59  0000 L BNN
+F 2 "Capacitor_THT:C_Rect_L7.0mm_W2.0mm_P5.00mm" H 2400 2100 50  0001 C CNN
+F 3 "" H 2400 2100 50  0001 C CNN
+	1    2400 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L sequencer-rescue:C-EUC0805K-VCO-eagle-import C6
+U 1 1 A09D61F4
+P 2100 1800
+F 0 "C6" H 2160 1815 59  0000 L BNN
+F 1 "10nF" H 2160 1615 59  0000 L BNN
+F 2 "Capacitor_THT:C_Rect_L7.0mm_W2.0mm_P5.00mm" H 2100 1800 50  0001 C CNN
+F 3 "" H 2100 1800 50  0001 C CNN
+	1    2100 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L sequencer-rescue:C-EUC0805K-VCO-eagle-import C7
+U 1 1 312D0660
+P 2100 2100
+F 0 "C7" H 2160 2115 59  0000 L BNN
+F 1 "10nF" H 2160 1915 59  0000 L BNN
+F 2 "Capacitor_THT:C_Rect_L7.0mm_W2.0mm_P5.00mm" H 2100 2100 50  0001 C CNN
+F 3 "" H 2100 2100 50  0001 C CNN
+	1    2100 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L sequencer-rescue:+15V-VCO-eagle-import #SUPPLY01
+U 1 1 9BB82FD5
+P 2100 1600
+F 0 "#SUPPLY01" H 2100 1600 50  0001 C CNN
+F 1 "+15V" H 2000 1725 59  0000 L BNN
+F 2 "" H 2100 1600 50  0001 C CNN
+F 3 "" H 2100 1600 50  0001 C CNN
+	1    2100 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L sequencer-rescue:-15V-VCO-eagle-import #SUPPLY02
+U 1 1 7668A807
+P 2100 2400
+F 0 "#SUPPLY02" H 2100 2400 50  0001 C CNN
+F 1 "-15V" H 1975 2215 59  0000 L BNN
+F 2 "" H 2100 2400 50  0001 C CNN
+F 3 "" H 2100 2400 50  0001 C CNN
+	1    2100 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L sequencer-rescue:GND-VCO-eagle-import #SUPPLY03
+U 1 1 9BCD8B80
+P 3850 2100
+F 0 "#SUPPLY03" H 3850 2100 50  0001 C CNN
+F 1 "GND" H 3775 1975 59  0000 L BNN
+F 2 "" H 3850 2100 50  0001 C CNN
+F 3 "" H 3850 2100 50  0001 C CNN
+	1    3850 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L sequencer-rescue:GND-VCO-eagle-import #SUPPLY014
+U 1 1 F46B704E
+P 3000 6350
+F 0 "#SUPPLY014" H 3000 6350 50  0001 C CNN
+F 1 "GND" H 2925 6225 59  0000 L BNN
+F 2 "" H 3000 6350 50  0001 C CNN
+F 3 "" H 3000 6350 50  0001 C CNN
+	1    3000 6350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L sequencer-rescue:555N-VCO-eagle-import IC1
+U 1 1 FDC91D6D
+P 2200 6900
+F 0 "IC1" H 1900 7330 59  0000 L BNN
+F 1 "555N" H 1900 6395 59  0000 L BNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 2200 6900 50  0001 C CNN
+F 3 "" H 2200 6900 50  0001 C CNN
+	1    2200 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5FD821CE
+P 1500 3600
+F 0 "#FLG0101" H 1500 3675 50  0001 C CNN
+F 1 "PWR_FLAG" H 1500 3773 50  0000 C CNN
+F 2 "" H 1500 3600 50  0001 C CNN
+F 3 "~" H 1500 3600 50  0001 C CNN
+	1    1500 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5FD83958
+P 2050 3600
+F 0 "#FLG0102" H 2050 3675 50  0001 C CNN
+F 1 "PWR_FLAG" H 2050 3773 50  0000 C CNN
+F 2 "" H 2050 3600 50  0001 C CNN
+F 3 "~" H 2050 3600 50  0001 C CNN
+	1    2050 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0103
+U 1 1 5FD87F23
+P 2650 3600
+F 0 "#FLG0103" H 2650 3675 50  0001 C CNN
+F 1 "PWR_FLAG" H 2650 3773 50  0000 C CNN
+F 2 "" H 2650 3600 50  0001 C CNN
+F 3 "~" H 2650 3600 50  0001 C CNN
+	1    2650 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-15V #PWR0101
+U 1 1 5FD8955D
+P 1500 3600
+F 0 "#PWR0101" H 1500 3700 50  0001 C CNN
+F 1 "-15V" H 1515 3773 50  0000 C CNN
+F 2 "" H 1500 3600 50  0001 C CNN
+F 3 "" H 1500 3600 50  0001 C CNN
+	1    1500 3600
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5FDA084C
+P 2050 3600
+F 0 "#PWR0102" H 2050 3350 50  0001 C CNN
+F 1 "GND" H 2055 3427 50  0000 C CNN
+F 2 "" H 2050 3600 50  0001 C CNN
+F 3 "" H 2050 3600 50  0001 C CNN
+	1    2050 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+15V #PWR0103
+U 1 1 5FDA22EF
+P 2650 3600
+F 0 "#PWR0103" H 2650 3450 50  0001 C CNN
+F 1 "+15V" H 2665 3773 50  0000 C CNN
+F 2 "" H 2650 3600 50  0001 C CNN
+F 3 "" H 2650 3600 50  0001 C CNN
+	1    2650 3600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2750 1600 3350 1600
+Wire Wire Line
+	3350 1600 3350 1800
+Wire Wire Line
+	3350 2200 3350 2400
+Wire Wire Line
+	3350 2400 2750 2400
+$Comp
+L Device:CP C1
+U 1 1 602557B5
+P 2200 7700
+F 0 "C1" V 1945 7700 50  0000 C CNN
+F 1 "10uF" V 2036 7700 50  0000 C CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 2238 7550 50  0001 C CNN
+F 3 "~" H 2200 7700 50  0001 C CNN
+	1    2200 7700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2050 7700 1800 7700
+Wire Wire Line
+	1800 7700 1800 7200
+Wire Wire Line
+	2350 7700 2600 7700
+Wire Wire Line
+	2600 7700 2600 7200
+$Comp
+L Device:C C2
+U 1 1 60259EFD
+P 2200 8250
+F 0 "C2" V 1948 8250 50  0000 C CNN
+F 1 "10nF" V 2039 8250 50  0000 C CNN
+F 2 "Capacitor_THT:C_Rect_L7.0mm_W2.0mm_P5.00mm" H 2238 8100 50  0001 C CNN
+F 3 "~" H 2200 8250 50  0001 C CNN
+	1    2200 8250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1800 7700 1800 8250
+Wire Wire Line
+	1800 8250 2050 8250
+Connection ~ 1800 7700
+Wire Wire Line
+	2350 8250 2600 8250
+Wire Wire Line
+	2600 8250 2600 7700
+Connection ~ 2600 7700
+$Comp
+L sequencer-rescue:POT-EU16MM-VCO-eagle-import POT1
+U 1 1 602698D0
+P 3400 6800
+F 0 "POT1" V 3200 6700 59  0000 L BNN
+F 1 "100k" V 3300 6700 59  0000 L BNN
+F 2 "Potentiometer_THT:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical" H 3400 6800 50  0001 C CNN
+F 3 "" H 3400 6800 50  0001 C CNN
+	1    3400 6800
+	-1   0    0    1   
+$EndComp
+$Comp
+L sequencer-rescue:R-EU_0207_10-VCO-eagle-import R1
+U 1 1 6027043F
+P 3100 7000
+F 0 "R1" H 2950 7059 59  0000 L BNN
+F 1 "1k" H 2950 6870 59  0000 L BNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 3100 7000 50  0001 C CNN
+F 3 "" H 3100 7000 50  0001 C CNN
+	1    3100 7000
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	2600 7000 2850 7000
+Wire Wire Line
+	3400 7000 3300 7000
+$Comp
+L power:+15V #PWR?
+U 1 1 6027D0E5
+P 3400 6600
+F 0 "#PWR?" H 3400 6450 50  0001 C CNN
+F 1 "+15V" H 3415 6773 50  0000 C CNN
+F 2 "" H 3400 6600 50  0001 C CNN
+F 3 "" H 3400 6600 50  0001 C CNN
+	1    3400 6600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 6800 3200 6800
+NoConn ~ 1800 7000
+$Comp
+L power:+15V #PWR?
+U 1 1 60285424
+P 1650 6800
+F 0 "#PWR?" H 1650 6650 50  0001 C CNN
+F 1 "+15V" H 1665 6973 50  0000 C TNN
+F 2 "" H 1650 6800 50  0001 C CNN
+F 3 "" H 1650 6800 50  0001 C CNN
+	1    1650 6800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 6800 1800 6800
+Connection ~ 2850 7000
+Wire Wire Line
+	2850 7000 2900 7000
+Wire Wire Line
+	2850 8450 2850 7000
+$Comp
+L Device:CP C3
+U 1 1 6028CEEA
+P 1500 7200
+F 0 "C3" V 1755 7200 50  0000 C CNN
+F 1 "22uF" V 1664 7200 50  0000 C CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 1538 7050 50  0001 C CNN
+F 3 "~" H 1500 7200 50  0001 C CNN
+	1    1500 7200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1800 7200 1650 7200
+Connection ~ 1800 7200
+Wire Wire Line
+	1350 7200 1150 7200
+Wire Wire Line
+	1150 7200 1150 6600
+Wire Wire Line
+	1150 6600 1800 6600
+Wire Wire Line
+	1150 7200 1150 8450
+Wire Wire Line
+	1150 8450 2850 8450
+Connection ~ 1150 7200
+Wire Wire Line
+	2600 5850 2600 6000
+$Comp
+L power:GND #PWR0106
+U 1 1 605E03E9
+P 2400 5000
+F 0 "#PWR0106" H 2400 4750 50  0001 C CNN
+F 1 "GND" H 2405 4827 50  0000 C CNN
+F 2 "" H 2400 5000 50  0001 C CNN
+F 3 "" H 2400 5000 50  0001 C CNN
+	1    2400 5000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2600 5300 2600 5450
+$Comp
+L Connector:AudioJack2_Ground J3
+U 1 1 605A1689
+P 2400 5200
+F 0 "J3" H 2221 5126 50  0000 R CNN
+F 1 "AudioJack2_Ground" H 2221 5217 50  0000 R CNN
+F 2 "Connector_Audio:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles" H 2400 5200 50  0001 C CNN
+F 3 "~" H 2400 5200 50  0001 C CNN
+	1    2400 5200
+	1    0    0    1   
+$EndComp
+Text Notes 2050 5350 2    59   ~ 0
+Trig In
+$Comp
+L sequencer-rescue:R-EU_0207_10-VCO-eagle-import R3
+U 1 1 602D026B
+P 2800 6000
+F 0 "R3" H 2650 6059 59  0000 L BNN
+F 1 "100k" H 2650 5870 59  0000 L BNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 2800 6000 50  0001 C CNN
+F 3 "" H 2800 6000 50  0001 C CNN
+	1    2800 6000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L sequencer-rescue:R-EU_0207_10-VCO-eagle-import R2
+U 1 1 602CB421
+P 2600 5650
+F 0 "R2" H 2450 5709 59  0000 L BNN
+F 1 "10k" H 2450 5520 59  0000 L BNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 2600 5650 50  0001 C CNN
+F 3 "" H 2600 5650 50  0001 C CNN
+	1    2600 5650
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	3000 6000 3000 6250
+$Comp
+L 4xxx:4017 IC2
+U 1 1 602EADEA
+P 4950 5700
+F 0 "IC2" H 5100 6500 50  0000 C CNN
+F 1 "4017" H 5100 6400 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm_Socket" H 4950 5700 50  0001 C CNN
+F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4017bms-22bms.pdf" H 4950 5700 50  0001 C CNN
+	1    4950 5700
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5450 6300
+$Comp
+L Device:D D2
+U 1 1 602EEC0A
+P 2600 6300
+F 0 "D2" V 2554 6380 50  0000 L CNN
+F 1 "D" V 2645 6380 50  0000 L CNN
+F 2 "Diode_THT:D_T-1_P10.16mm_Horizontal" H 2600 6300 50  0001 C CNN
+F 3 "~" H 2600 6300 50  0001 C CNN
+	1    2600 6300
+	0    1    1    0   
+$EndComp
+$Comp
+L sequencer-rescue:R-EU_0207_10-VCO-eagle-import R4
+U 1 1 602EF96D
+P 3750 5700
+F 0 "R4" H 3600 5759 59  0000 L BNN
+F 1 "2.2k" H 3600 5570 59  0000 L BNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 3750 5700 50  0001 C CNN
+F 3 "" H 3750 5700 50  0001 C CNN
+	1    3750 5700
+	0    -1   1    0   
+$EndComp
+$Comp
+L sequencer-rescue:GND-VCO-eagle-import #SUPPLY?
+U 1 1 602F0956
+P 3750 6000
+F 0 "#SUPPLY?" H 3750 6000 50  0001 C CNN
+F 1 "GND" H 3675 5875 59  0000 L BNN
+F 2 "" H 3750 6000 50  0001 C CNN
+F 3 "" H 3750 6000 50  0001 C CNN
+	1    3750 6000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 602F2C82
+P 3750 5350
+F 0 "D1" V 3789 5232 50  0000 R CNN
+F 1 "LED" V 3698 5232 50  0000 R CNN
+F 2 "LED_THT:LED_Oval_W5.2mm_H3.8mm" H 3750 5350 50  0001 C CNN
+F 3 "~" H 3750 5350 50  0001 C CNN
+	1    3750 5350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2600 5200 3750 5200
+$Comp
+L sequencer-rescue:GND-VCO-eagle-import #SUPPLY?
+U 1 1 602FAB94
+P 4150 6000
+F 0 "#SUPPLY?" H 4150 6000 50  0001 C CNN
+F 1 "GND" H 4075 5875 59  0000 L BNN
+F 2 "" H 4150 6000 50  0001 C CNN
+F 3 "" H 4150 6000 50  0001 C CNN
+	1    4150 6000
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 5300 4150 5300
+Wire Wire Line
+	4150 5300 4150 5900
+$Comp
+L sequencer-rescue:GND-VCO-eagle-import #SUPPLY?
+U 1 1 603019E1
+P 4950 7250
+F 0 "#SUPPLY?" H 4950 7250 50  0001 C CNN
+F 1 "GND" H 4875 7125 59  0000 L BNN
+F 2 "" H 4950 7250 50  0001 C CNN
+F 3 "" H 4950 7250 50  0001 C CNN
+	1    4950 7250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+15V #PWR?
+U 1 1 60304195
+P 4950 3350
+F 0 "#PWR?" H 4950 3200 50  0001 C CNN
+F 1 "+15V" H 4965 3523 50  0000 C CNN
+F 2 "" H 4950 3350 50  0001 C CNN
+F 3 "" H 4950 3350 50  0001 C CNN
+	1    4950 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L sequencer-rescue:R-EU_0207_10-VCO-eagle-import R5
+U 1 1 60306F2A
+P 4550 7000
+F 0 "R5" H 4400 7059 59  0000 L BNN
+F 1 "51k" H 4400 6870 59  0000 L BNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 4550 7000 50  0001 C CNN
+F 3 "" H 4550 7000 50  0001 C CNN
+	1    4550 7000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:CP C4
+U 1 1 60321EF5
+P 4800 4150
+F 0 "C4" V 4545 4150 50  0000 C CNN
+F 1 "10uF" V 4636 4150 50  0000 C CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 4838 4000 50  0001 C CNN
+F 3 "~" H 4800 4150 50  0001 C CNN
+	1    4800 4150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C5
+U 1 1 60323152
+P 4800 3700
+F 0 "C5" V 4548 3700 50  0000 C CNN
+F 1 "10nF" V 4639 3700 50  0000 C CNN
+F 2 "Capacitor_THT:C_Rect_L7.0mm_W2.0mm_P5.00mm" H 4838 3550 50  0001 C CNN
+F 3 "~" H 4800 3700 50  0001 C CNN
+	1    4800 3700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4950 3350 4950 3700
+Wire Wire Line
+	4950 3700 4950 4150
+Connection ~ 4950 3700
+Wire Wire Line
+	4950 4150 4950 4900
+Connection ~ 4950 4150
+$Comp
+L sequencer-rescue:GND-VCO-eagle-import #SUPPLY?
+U 1 1 60329B12
+P 4650 4400
+F 0 "#SUPPLY?" H 4650 4400 50  0001 C CNN
+F 1 "GND" H 4575 4275 59  0000 L BNN
+F 2 "" H 4650 4400 50  0001 C CNN
+F 3 "" H 4650 4400 50  0001 C CNN
+	1    4650 4400
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 4150 4650 4300
+Wire Wire Line
+	4650 3700 4650 4150
+Connection ~ 4650 4150
+Wire Wire Line
+	4950 6600 4950 7000
+Wire Wire Line
+	4750 7000 4950 7000
+Connection ~ 4950 7000
+Wire Wire Line
+	4950 7000 4950 7150
+$Comp
+L sequencer-rescue:POT-EU16MM-VCO-eagle-import POT10
+U 1 1 603316E3
+P 6000 6800
+F 0 "POT10" H 6300 6400 59  0000 R CNN
+F 1 "100k" H 6250 6500 59  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical" H 6000 6800 50  0001 C CNN
+F 3 "" H 6000 6800 50  0001 C CNN
+	1    6000 6800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D30
+U 1 1 603341DC
+P 5800 7950
+F 0 "D30" V 5846 7870 50  0000 R CNN
+F 1 "D" V 5755 7870 50  0000 R CNN
+F 2 "Diode_THT:D_T-1_P10.16mm_Horizontal" H 5800 7950 50  0001 C CNN
+F 3 "~" H 5800 7950 50  0001 C CNN
+	1    5800 7950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D D20
+U 1 1 60343544
+P 6150 7350
+F 0 "D20" V 6196 7270 50  0000 R CNN
+F 1 "D" V 6105 7270 50  0000 R CNN
+F 2 "Diode_THT:D_T-1_P10.16mm_Horizontal" H 6150 7350 50  0001 C CNN
+F 3 "~" H 6150 7350 50  0001 C CNN
+	1    6150 7350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5800 6800 5800 7800
+$Comp
+L Device:LED D10
+U 1 1 6035130E
+P 6300 6450
+F 0 "D10" V 6500 6450 50  0000 R CNN
+F 1 "LED" V 6400 6450 50  0000 R CNN
+F 2 "LED_THT:LED_Oval_W5.2mm_H3.8mm" H 6300 6450 50  0001 C CNN
+F 3 "~" H 6300 6450 50  0001 C CNN
+	1    6300 6450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L sequencer-rescue:R-EU_0207_10-VCO-eagle-import R10
+U 1 1 60355A7D
+P 6300 6800
+F 0 "R10" H 6300 6850 59  0000 L BNN
+F 1 "2.2k" H 6050 6850 59  0000 L BNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 6300 6800 50  0001 C CNN
+F 3 "" H 6300 6800 50  0001 C CNN
+	1    6300 6800
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	5450 5200 6000 5200
+Wire Wire Line
+	6000 5200 6000 6600
+Wire Wire Line
+	6000 5200 6150 5200
+Wire Wire Line
+	6150 5200 6150 7200
+Connection ~ 6000 5200
+Wire Wire Line
+	6150 5200 6300 5200
+Wire Wire Line
+	6300 5200 6300 6300
+Connection ~ 6150 5200
+Wire Wire Line
+	4950 7000 6000 7000
+Connection ~ 6000 7000
+$Comp
+L sequencer-rescue:POT-EU16MM-VCO-eagle-import POT11
+U 1 1 603C8DA8
+P 6800 6800
+F 0 "POT11" H 7100 6400 59  0000 R CNN
+F 1 "100k" H 7050 6500 59  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical" H 6800 6800 50  0001 C CNN
+F 3 "" H 6800 6800 50  0001 C CNN
+	1    6800 6800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D31
+U 1 1 603C8DAE
+P 6600 7950
+F 0 "D31" V 6646 7870 50  0000 R CNN
+F 1 "D" V 6555 7870 50  0000 R CNN
+F 2 "Diode_THT:D_T-1_P10.16mm_Horizontal" H 6600 7950 50  0001 C CNN
+F 3 "~" H 6600 7950 50  0001 C CNN
+	1    6600 7950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6600 6800 6600 7800
+$Comp
+L Device:LED D11
+U 1 1 603C8DBB
+P 7100 6450
+F 0 "D11" V 7300 6450 50  0000 R CNN
+F 1 "LED" V 7200 6450 50  0000 R CNN
+F 2 "LED_THT:LED_Oval_W5.2mm_H3.8mm" H 7100 6450 50  0001 C CNN
+F 3 "~" H 7100 6450 50  0001 C CNN
+	1    7100 6450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L sequencer-rescue:R-EU_0207_10-VCO-eagle-import R11
+U 1 1 603C8DC1
+P 7100 6800
+F 0 "R11" H 7100 6850 59  0000 L BNN
+F 1 "2.2k" H 6850 6850 59  0000 L BNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 7100 6800 50  0001 C CNN
+F 3 "" H 7100 6800 50  0001 C CNN
+	1    7100 6800
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	6800 7000 7100 7000
+$Comp
+L Device:D D21
+U 1 1 603C8DB4
+P 6950 7350
+F 0 "D21" V 6996 7270 50  0000 R CNN
+F 1 "D" V 6905 7270 50  0000 R CNN
+F 2 "Diode_THT:D_T-1_P10.16mm_Horizontal" H 6950 7350 50  0001 C CNN
+F 3 "~" H 6950 7350 50  0001 C CNN
+	1    6950 7350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L sequencer-rescue:POT-EU16MM-VCO-eagle-import POT12
+U 1 1 603FA51F
+P 7600 6800
+F 0 "POT12" H 7900 6400 59  0000 R CNN
+F 1 "100k" H 7850 6500 59  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical" H 7600 6800 50  0001 C CNN
+F 3 "" H 7600 6800 50  0001 C CNN
+	1    7600 6800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D32
+U 1 1 603FA529
+P 7400 7950
+F 0 "D32" V 7446 7870 50  0000 R CNN
+F 1 "D" V 7355 7870 50  0000 R CNN
+F 2 "Diode_THT:D_T-1_P10.16mm_Horizontal" H 7400 7950 50  0001 C CNN
+F 3 "~" H 7400 7950 50  0001 C CNN
+	1    7400 7950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7400 6800 7400 7800
+$Comp
+L Device:LED D12
+U 1 1 603FA534
+P 7900 6450
+F 0 "D12" V 8100 6450 50  0000 R CNN
+F 1 "LED" V 8000 6450 50  0000 R CNN
+F 2 "LED_THT:LED_Oval_W5.2mm_H3.8mm" H 7900 6450 50  0001 C CNN
+F 3 "~" H 7900 6450 50  0001 C CNN
+	1    7900 6450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L sequencer-rescue:R-EU_0207_10-VCO-eagle-import R12
+U 1 1 603FA53E
+P 7900 6800
+F 0 "R12" H 7900 6850 59  0000 L BNN
+F 1 "2.2k" H 7650 6850 59  0000 L BNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 7900 6800 50  0001 C CNN
+F 3 "" H 7900 6800 50  0001 C CNN
+	1    7900 6800
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	7600 7000 7900 7000
+$Comp
+L Device:D D22
+U 1 1 603FA549
+P 7750 7350
+F 0 "D22" V 7796 7270 50  0000 R CNN
+F 1 "D" V 7705 7270 50  0000 R CNN
+F 2 "Diode_THT:D_T-1_P10.16mm_Horizontal" H 7750 7350 50  0001 C CNN
+F 3 "~" H 7750 7350 50  0001 C CNN
+	1    7750 7350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L sequencer-rescue:POT-EU16MM-VCO-eagle-import POT13
+U 1 1 604050A4
+P 8450 6800
+F 0 "POT13" H 8750 6400 59  0000 R CNN
+F 1 "100k" H 8700 6500 59  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical" H 8450 6800 50  0001 C CNN
+F 3 "" H 8450 6800 50  0001 C CNN
+	1    8450 6800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D33
+U 1 1 604050AA
+P 8250 7950
+F 0 "D33" V 8296 7870 50  0000 R CNN
+F 1 "D" V 8205 7870 50  0000 R CNN
+F 2 "Diode_THT:D_T-1_P10.16mm_Horizontal" H 8250 7950 50  0001 C CNN
+F 3 "~" H 8250 7950 50  0001 C CNN
+	1    8250 7950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8250 6800 8250 7800
+$Comp
+L Device:LED D13
+U 1 1 604050B1
+P 8750 6450
+F 0 "D13" V 8950 6450 50  0000 R CNN
+F 1 "LED" V 8850 6450 50  0000 R CNN
+F 2 "LED_THT:LED_Oval_W5.2mm_H3.8mm" H 8750 6450 50  0001 C CNN
+F 3 "~" H 8750 6450 50  0001 C CNN
+	1    8750 6450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L sequencer-rescue:R-EU_0207_10-VCO-eagle-import R13
+U 1 1 604050B7
+P 8750 6800
+F 0 "R13" H 8750 6850 59  0000 L BNN
+F 1 "2.2k" H 8500 6850 59  0000 L BNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 8750 6800 50  0001 C CNN
+F 3 "" H 8750 6800 50  0001 C CNN
+	1    8750 6800
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	8450 7000 8750 7000
+$Comp
+L Device:D D23
+U 1 1 604050BE
+P 8600 7350
+F 0 "D23" V 8646 7270 50  0000 R CNN
+F 1 "D" V 8555 7270 50  0000 R CNN
+F 2 "Diode_THT:D_T-1_P10.16mm_Horizontal" H 8600 7350 50  0001 C CNN
+F 3 "~" H 8600 7350 50  0001 C CNN
+	1    8600 7350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L sequencer-rescue:POT-EU16MM-VCO-eagle-import POT14
+U 1 1 6040E4EC
+P 9250 6800
+F 0 "POT14" H 9550 6400 59  0000 R CNN
+F 1 "100k" H 9500 6500 59  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical" H 9250 6800 50  0001 C CNN
+F 3 "" H 9250 6800 50  0001 C CNN
+	1    9250 6800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D34
+U 1 1 6040E4F2
+P 9050 7950
+F 0 "D34" V 9096 7870 50  0000 R CNN
+F 1 "D" V 9005 7870 50  0000 R CNN
+F 2 "Diode_THT:D_T-1_P10.16mm_Horizontal" H 9050 7950 50  0001 C CNN
+F 3 "~" H 9050 7950 50  0001 C CNN
+	1    9050 7950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9050 6800 9050 7800
+$Comp
+L Device:LED D14
+U 1 1 6040E4F9
+P 9550 6450
+F 0 "D14" V 9750 6450 50  0000 R CNN
+F 1 "LED" V 9650 6450 50  0000 R CNN
+F 2 "LED_THT:LED_Oval_W5.2mm_H3.8mm" H 9550 6450 50  0001 C CNN
+F 3 "~" H 9550 6450 50  0001 C CNN
+	1    9550 6450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L sequencer-rescue:R-EU_0207_10-VCO-eagle-import R14
+U 1 1 6040E4FF
+P 9550 6800
+F 0 "R14" H 9550 6850 59  0000 L BNN
+F 1 "2.2k" H 9300 6850 59  0000 L BNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 9550 6800 50  0001 C CNN
+F 3 "" H 9550 6800 50  0001 C CNN
+	1    9550 6800
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	9250 7000 9550 7000
+$Comp
+L Device:D D24
+U 1 1 6040E506
+P 9400 7350
+F 0 "D24" V 9446 7270 50  0000 R CNN
+F 1 "D" V 9355 7270 50  0000 R CNN
+F 2 "Diode_THT:D_T-1_P10.16mm_Horizontal" H 9400 7350 50  0001 C CNN
+F 3 "~" H 9400 7350 50  0001 C CNN
+	1    9400 7350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L sequencer-rescue:POT-EU16MM-VCO-eagle-import POT15
+U 1 1 6041382C
+P 10050 6800
+F 0 "POT15" H 10350 6400 59  0000 R CNN
+F 1 "100k" H 10300 6500 59  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical" H 10050 6800 50  0001 C CNN
+F 3 "" H 10050 6800 50  0001 C CNN
+	1    10050 6800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D35
+U 1 1 60413832
+P 9850 7950
+F 0 "D35" V 9896 7870 50  0000 R CNN
+F 1 "D" V 9805 7870 50  0000 R CNN
+F 2 "Diode_THT:D_T-1_P10.16mm_Horizontal" H 9850 7950 50  0001 C CNN
+F 3 "~" H 9850 7950 50  0001 C CNN
+	1    9850 7950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9850 6800 9850 7800
+$Comp
+L Device:LED D15
+U 1 1 60413839
+P 10350 6450
+F 0 "D15" V 10550 6450 50  0000 R CNN
+F 1 "LED" V 10450 6450 50  0000 R CNN
+F 2 "LED_THT:LED_Oval_W5.2mm_H3.8mm" H 10350 6450 50  0001 C CNN
+F 3 "~" H 10350 6450 50  0001 C CNN
+	1    10350 6450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L sequencer-rescue:R-EU_0207_10-VCO-eagle-import R15
+U 1 1 6041383F
+P 10350 6800
+F 0 "R15" H 10350 6850 59  0000 L BNN
+F 1 "2.2k" H 10100 6850 59  0000 L BNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 10350 6800 50  0001 C CNN
+F 3 "" H 10350 6800 50  0001 C CNN
+	1    10350 6800
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	10050 7000 10350 7000
+$Comp
+L Device:D D25
+U 1 1 60413846
+P 10200 7350
+F 0 "D25" V 10246 7270 50  0000 R CNN
+F 1 "D" V 10155 7270 50  0000 R CNN
+F 2 "Diode_THT:D_T-1_P10.16mm_Horizontal" H 10200 7350 50  0001 C CNN
+F 3 "~" H 10200 7350 50  0001 C CNN
+	1    10200 7350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L sequencer-rescue:POT-EU16MM-VCO-eagle-import POT16
+U 1 1 6041970C
+P 10850 6800
+F 0 "POT16" H 11150 6400 59  0000 R CNN
+F 1 "100k" H 11100 6500 59  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical" H 10850 6800 50  0001 C CNN
+F 3 "" H 10850 6800 50  0001 C CNN
+	1    10850 6800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D36
+U 1 1 60419712
+P 10650 7950
+F 0 "D36" V 10696 7870 50  0000 R CNN
+F 1 "D" V 10605 7870 50  0000 R CNN
+F 2 "Diode_THT:D_T-1_P10.16mm_Horizontal" H 10650 7950 50  0001 C CNN
+F 3 "~" H 10650 7950 50  0001 C CNN
+	1    10650 7950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10650 6800 10650 7800
+$Comp
+L Device:LED D16
+U 1 1 60419719
+P 11150 6450
+F 0 "D16" V 11350 6450 50  0000 R CNN
+F 1 "LED" V 11250 6450 50  0000 R CNN
+F 2 "LED_THT:LED_Oval_W5.2mm_H3.8mm" H 11150 6450 50  0001 C CNN
+F 3 "~" H 11150 6450 50  0001 C CNN
+	1    11150 6450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L sequencer-rescue:R-EU_0207_10-VCO-eagle-import R16
+U 1 1 6041971F
+P 11150 6800
+F 0 "R16" H 11150 6850 59  0000 L BNN
+F 1 "2.2k" H 10900 6850 59  0000 L BNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 11150 6800 50  0001 C CNN
+F 3 "" H 11150 6800 50  0001 C CNN
+	1    11150 6800
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	10850 7000 11150 7000
+$Comp
+L Device:D D26
+U 1 1 60419726
+P 11000 7350
+F 0 "D26" V 11046 7270 50  0000 R CNN
+F 1 "D" V 10955 7270 50  0000 R CNN
+F 2 "Diode_THT:D_T-1_P10.16mm_Horizontal" H 11000 7350 50  0001 C CNN
+F 3 "~" H 11000 7350 50  0001 C CNN
+	1    11000 7350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L sequencer-rescue:POT-EU16MM-VCO-eagle-import POT17
+U 1 1 60420A29
+P 11650 6800
+F 0 "POT17" H 11950 6400 59  0000 R CNN
+F 1 "100k" H 11900 6500 59  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical" H 11650 6800 50  0001 C CNN
+F 3 "" H 11650 6800 50  0001 C CNN
+	1    11650 6800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D37
+U 1 1 60420A2F
+P 11450 7950
+F 0 "D37" V 11496 7870 50  0000 R CNN
+F 1 "D" V 11405 7870 50  0000 R CNN
+F 2 "Diode_THT:D_T-1_P10.16mm_Horizontal" H 11450 7950 50  0001 C CNN
+F 3 "~" H 11450 7950 50  0001 C CNN
+	1    11450 7950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	11450 6800 11450 7800
+$Comp
+L Device:LED D17
+U 1 1 60420A36
+P 11950 6450
+F 0 "D17" V 12150 6450 50  0000 R CNN
+F 1 "LED" V 12050 6450 50  0000 R CNN
+F 2 "LED_THT:LED_Oval_W5.2mm_H3.8mm" H 11950 6450 50  0001 C CNN
+F 3 "~" H 11950 6450 50  0001 C CNN
+	1    11950 6450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L sequencer-rescue:R-EU_0207_10-VCO-eagle-import R17
+U 1 1 60420A3C
+P 11950 6800
+F 0 "R17" H 11950 6850 59  0000 L BNN
+F 1 "2.2k" H 11700 6850 59  0000 L BNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 11950 6800 50  0001 C CNN
+F 3 "" H 11950 6800 50  0001 C CNN
+	1    11950 6800
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	11650 7000 11950 7000
+Wire Wire Line
+	11800 7500 11000 7500
+Connection ~ 11800 7500
+Wire Wire Line
+	11000 7500 10200 7500
+Connection ~ 11000 7500
+Wire Wire Line
+	10200 7500 9400 7500
+Connection ~ 10200 7500
+Wire Wire Line
+	9400 7500 8600 7500
+Connection ~ 9400 7500
+Wire Wire Line
+	8600 7500 7750 7500
+Connection ~ 8600 7500
+Wire Wire Line
+	7750 7500 6950 7500
+Connection ~ 7750 7500
+Wire Wire Line
+	6950 7500 6150 7500
+Connection ~ 6950 7500
+Wire Wire Line
+	5800 8100 6600 8100
+Wire Wire Line
+	6600 8100 7400 8100
+Connection ~ 6600 8100
+Wire Wire Line
+	7400 8100 8250 8100
+Connection ~ 7400 8100
+Wire Wire Line
+	8250 8100 9050 8100
+Connection ~ 8250 8100
+Wire Wire Line
+	9050 8100 9850 8100
+Connection ~ 9050 8100
+Wire Wire Line
+	9850 8100 10650 8100
+Connection ~ 9850 8100
+Wire Wire Line
+	10650 8100 11450 8100
+Connection ~ 10650 8100
+Connection ~ 11450 8100
+Wire Wire Line
+	6000 7000 6300 7000
+Connection ~ 6800 7000
+Connection ~ 6300 7000
+Wire Wire Line
+	6300 7000 6800 7000
+Wire Wire Line
+	7100 7000 7600 7000
+Connection ~ 7100 7000
+Connection ~ 7600 7000
+Wire Wire Line
+	7900 7000 8450 7000
+Connection ~ 7900 7000
+Connection ~ 8450 7000
+Wire Wire Line
+	8750 7000 9250 7000
+Connection ~ 8750 7000
+Connection ~ 9250 7000
+Wire Wire Line
+	9550 7000 10050 7000
+Connection ~ 9550 7000
+Connection ~ 10050 7000
+Wire Wire Line
+	10350 7000 10850 7000
+Connection ~ 10350 7000
+Connection ~ 10850 7000
+Wire Wire Line
+	11150 7000 11650 7000
+Connection ~ 11150 7000
+Connection ~ 11650 7000
+Wire Wire Line
+	5450 5300 6800 5300
+Wire Wire Line
+	6800 5300 6800 6600
+Wire Wire Line
+	6800 5300 6950 5300
+Wire Wire Line
+	6950 5300 6950 7200
+Connection ~ 6800 5300
+Wire Wire Line
+	6950 5300 7100 5300
+Wire Wire Line
+	7100 5300 7100 6300
+Connection ~ 6950 5300
+Wire Wire Line
+	5450 5400 7600 5400
+Wire Wire Line
+	7600 5400 7600 6600
+Wire Wire Line
+	7600 5400 7750 5400
+Wire Wire Line
+	7750 5400 7750 7200
+Connection ~ 7600 5400
+Wire Wire Line
+	7750 5400 7900 5400
+Wire Wire Line
+	7900 5400 7900 6300
+Connection ~ 7750 5400
+Wire Wire Line
+	5450 5500 8450 5500
+Wire Wire Line
+	8450 5500 8450 6600
+Wire Wire Line
+	8450 5500 8600 5500
+Wire Wire Line
+	8600 5500 8600 7200
+Connection ~ 8450 5500
+Wire Wire Line
+	8600 5500 8750 5500
+Wire Wire Line
+	8750 5500 8750 6300
+Connection ~ 8600 5500
+Wire Wire Line
+	5450 5600 9250 5600
+Wire Wire Line
+	9250 5600 9250 6600
+Wire Wire Line
+	9250 5600 9400 5600
+Wire Wire Line
+	9400 5600 9400 7200
+Connection ~ 9250 5600
+Wire Wire Line
+	9400 5600 9550 5600
+Wire Wire Line
+	9550 5600 9550 6300
+Connection ~ 9400 5600
+Wire Wire Line
+	5450 5700 10050 5700
+Wire Wire Line
+	10050 5700 10050 6600
+Wire Wire Line
+	10050 5700 10200 5700
+Wire Wire Line
+	10200 5700 10200 7200
+Connection ~ 10050 5700
+Wire Wire Line
+	10200 5700 10350 5700
+Wire Wire Line
+	10350 5700 10350 6300
+Connection ~ 10200 5700
+Wire Wire Line
+	5450 5800 10850 5800
+Wire Wire Line
+	10850 5800 10850 6600
+Wire Wire Line
+	10850 5800 11000 5800
+Wire Wire Line
+	11000 5800 11000 7200
+Connection ~ 10850 5800
+Wire Wire Line
+	11000 5800 11150 5800
+Wire Wire Line
+	11150 5800 11150 6300
+Connection ~ 11000 5800
+Wire Wire Line
+	5450 5900 11650 5900
+Wire Wire Line
+	11650 5900 11650 6600
+Wire Wire Line
+	11650 5900 11800 5900
+Wire Wire Line
+	11800 5900 11800 7200
+Connection ~ 11650 5900
+Wire Wire Line
+	11800 5900 11950 5900
+Wire Wire Line
+	11950 5900 11950 6300
+Connection ~ 11800 5900
+Connection ~ 3750 5200
+Wire Wire Line
+	4350 7000 4350 5500
+Wire Wire Line
+	4350 5500 4450 5500
+Connection ~ 6300 5200
+Connection ~ 7100 5300
+Connection ~ 7900 5400
+Connection ~ 8750 5500
+Connection ~ 9550 5600
+Connection ~ 10350 5700
+Connection ~ 11150 5800
+Connection ~ 11950 5900
+Wire Wire Line
+	4350 4800 4350 5500
+Connection ~ 4350 5500
+Wire Wire Line
+	3750 5200 4450 5200
+Wire Wire Line
+	2600 6600 2600 6450
+Wire Wire Line
+	2600 6150 2600 6000
+Connection ~ 2600 6000
+Wire Wire Line
+	2400 1700 2750 1700
+Connection ~ 2400 1700
+Connection ~ 2750 1700
+Wire Wire Line
+	2750 1700 2750 1800
+Wire Wire Line
+	2400 2300 2750 2300
+Connection ~ 2400 2300
+Connection ~ 2750 2300
+Wire Wire Line
+	2750 2300 2750 2200
+Wire Wire Line
+	2400 2000 2750 2000
+$Comp
+L Device:D D27
+U 1 1 60420A43
+P 11800 7350
+F 0 "D27" V 11846 7270 50  0000 R CNN
+F 1 "D" V 11755 7270 50  0000 R CNN
+F 2 "Diode_THT:D_T-1_P10.16mm_Horizontal" H 11800 7350 50  0001 C CNN
+F 3 "~" H 11800 7350 50  0001 C CNN
+	1    11800 7350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	11450 8100 12300 8100
+Wire Wire Line
+	12300 7500 11800 7500
+$Comp
+L power:GND #PWR?
+U 1 1 60245311
+P 12500 7300
+F 0 "#PWR?" H 12500 7050 50  0001 C CNN
+F 1 "GND" H 12505 7127 50  0000 C CNN
+F 2 "" H 12500 7300 50  0001 C CNN
+F 3 "" H 12500 7300 50  0001 C CNN
+	1    12500 7300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:AudioJack2_Ground J3
+U 1 1 6024530A
+P 12500 7500
+F 0 "J3" H 12320 7426 50  0000 R CNN
+F 1 "AudioJack2_Ground" H 12320 7517 50  0000 R CNN
+F 2 "Connector_Audio:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles" H 12500 7500 50  0001 C CNN
+F 3 "~" H 12500 7500 50  0001 C CNN
+	1    12500 7500
+	-1   0    0    1   
+$EndComp
+Text Notes 12800 7700 0    59   ~ 0
+Gate Out
+$Comp
+L sequencer-rescue:GND-VCO-eagle-import #SUPPLY?
+U 1 1 60245303
+P 12300 7700
+F 0 "#SUPPLY?" H 12300 7700 50  0001 C CNN
+F 1 "GND" H 12225 7575 59  0000 L BNN
+F 2 "" H 12300 7700 50  0001 C CNN
+F 3 "" H 12300 7700 50  0001 C CNN
+	1    12300 7700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0112
+U 1 1 6076BE39
+P 12500 7900
+F 0 "#PWR0112" H 12500 7650 50  0001 C CNN
+F 1 "GND" H 12505 7727 50  0000 C CNN
+F 2 "" H 12500 7900 50  0001 C CNN
+F 3 "" H 12500 7900 50  0001 C CNN
+	1    12500 7900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:AudioJack2_Ground J2
+U 1 1 605AA416
+P 12500 8100
+F 0 "J2" H 12320 8026 50  0000 R CNN
+F 1 "AudioJack2_Ground" H 12320 8117 50  0000 R CNN
+F 2 "Connector_Audio:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles" H 12500 8100 50  0001 C CNN
+F 3 "~" H 12500 8100 50  0001 C CNN
+	1    12500 8100
+	-1   0    0    1   
+$EndComp
+Text Notes 12800 8300 0    59   ~ 0
+CV Out
+$Comp
+L sequencer-rescue:GND-VCO-eagle-import #SUPPLY026
+U 1 1 5045FD3D
+P 12300 8300
+F 0 "#SUPPLY026" H 12300 8300 50  0001 C CNN
+F 1 "GND" H 12225 8175 59  0000 L BNN
+F 2 "" H 12300 8300 50  0001 C CNN
+F 3 "" H 12300 8300 50  0001 C CNN
+	1    12300 8300
+	1    0    0    -1  
+$EndComp
+Connection ~ 12850 6000
+Wire Wire Line
+	12850 6000 12850 6100
+Connection ~ 12850 5900
+Wire Wire Line
+	12850 5900 12850 6000
+Connection ~ 12850 5800
+Wire Wire Line
+	12850 5800 12850 5900
+Connection ~ 12850 5700
+Wire Wire Line
+	12850 5700 12850 5800
+Connection ~ 12850 5600
+Wire Wire Line
+	12850 5600 12850 5700
+Connection ~ 12850 5500
+Wire Wire Line
+	12850 5500 12850 5600
+Connection ~ 12850 5400
+Wire Wire Line
+	12850 5400 12850 5500
+Connection ~ 12850 5300
+Wire Wire Line
+	12850 5300 12850 5400
+Connection ~ 12850 5200
+Wire Wire Line
+	12850 5200 12850 5300
+Wire Wire Line
+	4350 4800 12850 4800
+Wire Wire Line
+	12850 4800 12850 5200
+$Comp
+L Connector_Generic:Conn_01x10 J5
+U 1 1 605E9D00
+P 12650 5600
+F 0 "J5" H 12600 6150 50  0000 L CNN
+F 1 "Conn_01x10" H 12250 5000 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical" H 12650 5600 50  0001 C CNN
+F 3 "~" H 12650 5600 50  0001 C CNN
+	1    12650 5600
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 6100 12300 6100
+Wire Wire Line
+	5450 6000 12300 6000
+Wire Wire Line
+	11950 5900 12300 5900
+Wire Wire Line
+	11150 5800 12300 5800
+Wire Wire Line
+	10350 5700 12300 5700
+Wire Wire Line
+	9550 5600 12300 5600
+Wire Wire Line
+	8750 5500 12300 5500
+Wire Wire Line
+	7900 5400 12300 5400
+Wire Wire Line
+	7100 5300 12300 5300
+Wire Wire Line
+	6300 5200 12300 5200
+$Comp
+L Connector_Generic:Conn_01x10 J4
+U 1 1 60563331
+P 12500 5600
+F 0 "J4" H 12450 6150 50  0000 L CNN
+F 1 "Conn_01x10" H 12100 5000 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical" H 12500 5600 50  0001 C CNN
+F 3 "~" H 12500 5600 50  0001 C CNN
+	1    12500 5600
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
