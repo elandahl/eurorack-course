@@ -71,7 +71,11 @@ This includes annotated views of component placement, soldering, socket orientat
 
 ---
 
-## 📊 Technical Analysis
+## 📊 Analysis
+
+There is a [video overview of the ADSR](https://www.youtube.com/watch?v=zlO4ljZnAc8), including the meaning of envelopes and how to use the simulations.
+
+There are lushprojects simulations of just the [trigger processing circuit](https://tinyurl.com/y66v7bsb)  and the [entire ADSR circuit without internal buffering](https://tinyurl.com/y358uu4k).
 
 A technical analysis of the ADSR circuit — including how timing is generated, how capacitors and resistors affect each stage, and how the 555 is used — is forthcoming:
 
