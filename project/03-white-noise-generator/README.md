@@ -70,6 +70,12 @@ If you substitute a **2N3904**:
 
 ---
 
+## 📊 Analysis and Filter Behavior
+
+See [filter-analysis.md](./filter-analysis.md) for a detailed explanation of the gain stages, high-pass filters, and what happens when you change component values.
+
+---
+
 ## 🧠 Prerequisites
 
 This module depends on the following concepts, tools, and prior builds:
