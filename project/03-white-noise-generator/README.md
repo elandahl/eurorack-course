@@ -10,7 +10,7 @@ This module produces broadband white noise using a reverse-biased transistor jun
 
 ## 🔩 Key Notes on the Transistor
 
-The original circuit calls for a **BC548** NPN transistor (not PNP as previously stated). However, the **noise characteristics can vary significantly** depending on the transistor used.
+The original circuit calls for a **BC548** NPN transistor. However, the **noise characteristics can vary significantly** depending on the transistor used.
 
 - 💡 To explore this, solder a **3-pin transistor socket** instead of directly installing the transistor.
 - This allows students to **swap transistors** and investigate different noise spectra.
@@ -70,11 +70,23 @@ If you substitute a **2N3904**:
 
 ---
 
-## 📚 Related Topics
+## 🧠 Prerequisites
 
-- [Op-Amps](https://github.com/elandahl/eurorack-course/blob/main/content/02-op-amps/README.md)
-- [DC Equivalent Circuits](https://github.com/elandahl/eurorack-course/blob/main/content/01-dc-equivalent-circuits/README.md)
-- [Mechanical Rack Assembly](https://github.com/elandahl/eurorack-course/blob/main/project/01-mechanical-rack/README.md)
+This module depends on the following concepts, tools, and prior builds:
+
+- 🧠 [Op-Amps](https://github.com/elandahl/eurorack-course/blob/main/content/02-op-amps/README.md)
+- 🔩 [Mechanical Rack Assembly](https://github.com/elandahl/eurorack-course/blob/main/project/01-mechanical-rack/README.md)
+- 🔋 [Power Supply Module](https://github.com/elandahl/eurorack-course/blob/main/project/02-power-supply/README.md)
+- ✂️ [Faceplate Design](https://github.com/elandahl/eurorack-course/blob/main/tools/faceplate-design/README.md)
+
+Make sure these modules are complete and tested before beginning construction of the White Noise Generator.
+
+---
+
+## 🧪 Suggested Experiments
+
+- Compare the noise characteristics of multiple transistor types (BC548, 2N3904, etc.)
+- Measure spectral content of noise output using software such as Audacity
 
 ---
 
