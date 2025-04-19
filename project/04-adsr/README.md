@@ -11,6 +11,16 @@ This module implements an **ADSR envelope generator** using classic 555 and 4017
 
 These stages control how a sound evolves over time when triggered — a core function in modular and analog synthesis.
 
+Original design by Renne Schmitz, (https://www.schmitzbits.de/adsr.html)
+
+---
+
+## 🧰 Schematic Overview
+
+Below is the schematic for the ADSR Envelope Generator (ADSR_SR_2-26-21):
+
+![ADSR Schematic](adsr-schematic.png)
+
 ---
 
 ## 🔍 Circuit and Design Files
@@ -48,7 +58,7 @@ All files have been archived here for preservation and potential revision.
 | 9   | LEDs                            | LED        | D1, D10–D17                  |
 | 6   | Capacitors                      | 10nF       | C2, C5–C9                    |
 | 2   | Electrolytic capacitors         | 10µF       | C1, C4                       |
-| 1   | Electrolytic capacitor          | 22µF       | C3                           |
+| 1   | Nonpolarized capacitor          | 2µF        | C3                           |
 
 ---
 
@@ -63,9 +73,9 @@ This includes annotated views of component placement, soldering, socket orientat
 
 ## 📊 Technical Analysis
 
-A technical analysis of the ADSR circuit — including how timing is generated, how capacitors and resistors affect each stage, and how the 555/4017 are used to create stateful logic — is forthcoming:
+A technical analysis of the ADSR circuit — including how timing is generated, how capacitors and resistors affect each stage, and how the 555 is used — is forthcoming:
 
-🔗 [ADSR Technical Analysis](./analysis.md) (coming soon)
+🔗 [ADSR Technical Analysis](./analysis.md)
 
 ---
 
