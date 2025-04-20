@@ -2,95 +2,99 @@
 
 **Project 04 – Modular Synthesizer Course**
 
-This module implements an **ADSR envelope generator** using classic 555 and 4017 ICs, along with a network of LEDs, diodes, capacitors, and timing resistors. The ADSR module generates a voltage envelope with four phases:
+This Eurorack-compatible module implements an **ADSR (Attack, Decay, Sustain, Release)** envelope generator using a **TLC555 CMOS timer**, op-amps, discrete transistors, and a shaping network of resistors, capacitors, and diodes. When triggered by a gate signal, it produces a control voltage that follows a classic ADSR shape used to control VCAs, filters, or pitch over time in a modular synthesizer.
 
-- **Attack** – how fast the envelope rises to its peak
-- **Decay** – how fast it falls to a sustain level
-- **Sustain** – the held level as long as the gate is active
-- **Release** – how fast it falls to zero when the gate is released
+The design is adapted from [René Schmitz’s "Fastest Envelope in the West"](https://www.schmitzbits.de/adsr.html), simplified for modern components and student assembly.
 
-These stages control how a sound evolves over time when triggered — a core function in modular and analog synthesis.
+---
 
-Original design by Renne Schmitz, (https://www.schmitzbits.de/adsr.html)
+## 🔁 How It Works
+
+The four phases:
+
+- **Attack** – how quickly the voltage rises to its peak when a gate is received  
+- **Decay** – how quickly it falls to the sustain level after the attack  
+- **Sustain** – the level held while the gate is high  
+- **Release** – how quickly the envelope falls to zero after the gate ends  
+
+A CMOS 555 timer (TLC555) generates a fixed-duration logic pulse that controls a capacitor (C3) charged and discharged through different RC paths. Diodes steer current direction for each phase, and an op-amp buffers the output.
 
 ---
 
 ## 🧰 Schematic Overview
 
-Below is the schematic for the ADSR Envelope Generator (ADSR_SR_2-26-21):
+Below is the schematic for the ADSR Envelope Generator (`ADSR_SR_2-26-21`):
 
 ![ADSR Schematic](adsr-schematic.png)
 
 ---
 
-## 🔍 Circuit and Design Files
+## 📁 Circuit and Design Files
 
-This folder includes the full set of KiCad source files, including:
+This folder includes the full set of KiCad source files:
 
-- `ADSR_SR_2-26-21.sch` – Circuit schematic
-- `ADSR_SR_2-26-21.kicad_pcb` – PCB layout
-- `ADSR_SR_2-26-21.csv` – Bill of Materials (also formatted below)
-- Library and cache files (`.lib`, `.dcm`)
-- A legacy schematic and board set (`ADSR.sch`, `ADSR.pro`)
-- A subfolder with legacy backups: `ADSR_SR_2-26-21-backups/`
-
-All files have been archived here for preservation and potential revision.
+- `ADSR_SR_2-26-21.sch` – Schematic (KiCad)
+- `ADSR_SR_2-26-21.kicad_pcb` – PCB layout (KiCad)
+- `ADSR_SR_2-26-21.csv` – Bill of Materials (BOM)
+- `ADSR_SR_2-26-21-backups/` – Backup and autosave files
+- `.lib`, `.dcm`, `.pro`, `.net`, `.xml` – Supporting KiCad project data
 
 ---
 
-## 🧰 Bill of Materials (BOM)
+## 🧾 Bill of Materials (BOM)
 
-| Qty | Component                       | Value      | Notes                        |
-|-----|---------------------------------|------------|------------------------------|
-| 2   | Mounting Holes                  | 2.5 mm     |                              |
-| 1   | 10-pin IDC Header               | ML10       | Power input                  |
-| 9   | Resistors                       | 2.2k       | R17, R16, ..., R4            |
-| 1   | Resistor                        | 51k        | R5                           |
-| 1   | Resistor                        | 100k       | R3                           |
-| 1   | Resistor                        | 10k        | R2                           |
-| 1   | Resistor                        | 1k         | R1                           |
-| 9   | Potentiometers                  | 100k       | Alpha RD901F series          |
-| 2   | Pin headers                     | 1x10       | J4, J5                       |
-| 3   | Audio jacks                     | PJ398SM    | J1, J2, J3                   |
-| 1   | IC Socket (DIP-16)              | 4017       | IC2                          |
-| 1   | IC Socket (DIP-8)               | 555N       | IC1                          |
-| 17  | Signal diodes                   | D          | D20–D37, D2                  |
-| 9   | LEDs                            | LED        | D1, D10–D17                  |
-| 6   | Capacitors                      | 10nF       | C2, C5–C9                    |
-| 2   | Electrolytic capacitors         | 10µF       | C1, C4                       |
-| 1   | Nonpolarized capacitor          | 2µF        | C3                           |
+| Qty | Component            | Value        | Notes                          |
+|-----|----------------------|--------------|---------------------------------|
+| 1   | Timer IC             | TLC555       | CMOS version (not NE555)        |
+| 1   | Op-Amp               | TL072        | Dual op-amp, buffer and divider |
+| 2   | NPN Transistor       | 2N3904       | Gate pulse shaping              |
+| 3   | Potentiometer        | 1 MΩ Linear  | Attack, Decay, Release          |
+| 1   | Capacitor (polarized)| 10 µF        | TLC555 timing cap               |
+| 1   | Capacitor (bipolar)  | 2.2 µF       | Envelope integrator             |
+| 2   | Capacitor (ceramic)  | 100 nF       | Power supply decoupling         |
+| 3   | Resistor             | 220 Ω        | Series with A/D/R pots          |
+| 2   | Resistor             | 10 kΩ        | Sustain voltage divider         |
+| 3   | Resistors            | 4.7 kΩ        | Transistor bias, 555 pull-up    |
+| 3   | Resistors            | 10–22 kΩ      | Input bias, base drive          |
+| 4   | Diodes               | 1N4148       | Signal steering (A/D/R + reset) |
+| 2   | Audio Jacks          | PJ398SM      | Gate input, envelope output     |
+| 1   | IDC Header           | 10-pin (ML10)| Eurorack power                  |
+| 2   | Mounting Holes       | 2.5 mm       | M2.5 standoffs recommended      |
 
 ---
 
-## 🧱 Assembly Guide (with Photos)
+## 🛠️ Assembly Guide (with Photos)
 
-Step-by-step build photos with comments are available here:  
+Step-by-step build documentation is available here:
+
 📷 [Google Drive – ADSR Assembly Photos](https://drive.google.com/drive/folders/1wlfnccw4EV9Ylf7Mrc6TivC7RlBOovWM?usp=sharing)
 
-This includes annotated views of component placement, soldering, socket orientation, and troubleshooting tips.
+This includes high-res annotated photos, component placement, and tips for first-time solderers.
 
 ---
 
-## 📊 Analysis
+## 📊 Analysis & Simulation
 
-There is a [video overview of the ADSR](https://www.youtube.com/watch?v=zlO4ljZnAc8), including the meaning of envelopes and how to use the simulations.
+An in-depth analysis of the ADSR envelope shaping and RC time constants is provided here:
 
-There are lushprojects simulations of just the [trigger processing circuit](https://tinyurl.com/y66v7bsb)  and the [entire ADSR circuit without internal buffering](https://tinyurl.com/y358uu4k).
+🔍 [ADSR Technical Analysis](./analysis.md)
 
-A technical analysis of the ADSR circuit — including how timing is generated, how capacitors and resistors affect each stage, and how the 555 is used — is forthcoming:
+Simulation tools using [LushProjects](https://lushprojects.org/circuitjs/) can help visualize:
 
-🔗 [ADSR Technical Analysis](./analysis.md)
+- [Gate trigger + transistor shaper](https://tinyurl.com/y66v7bsb)  
+- [Full ADSR timing circuit](https://tinyurl.com/y358uu4k)
 
 ---
 
-## 📦 Notes on Legacy Files
+## 🕰️ Legacy Files
 
-This directory also includes earlier schematic and project files from prior versions:
-- `ADSR.sch`, `ADSR.pro` (original Eagle-imported files)
-- `sequencer.*` (related test/development variant)
-- `.bak`, `.net`, `.xml` files retained for historical/debugging reference
+The folder includes earlier schematic files and alternate circuit variants:
 
-Please ignore or archive these unless you're doing historical revision or schematic debugging.
+- `ADSR.sch`, `ADSR.pro`, etc. — original Eagle-imported designs
+- `sequencer.*` files — not used in this project
+- `.bak`, `.xml`, `.net` — backup and compiler artifacts
+
+These are included for historical completeness and archival.
 
 ---
 
