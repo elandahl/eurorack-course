@@ -55,12 +55,12 @@ This folder includes the full set of KiCad source files:
 | 3   | Resistor             | 220 Ω        | Series with A/D/R pots          |
 | 2   | Resistor             | 10 kΩ        | Input and transistor base         |
 | 4   | Resistors            | 4.7 kΩ       | Transistor bias, 555 pull-up    |
-| 1   | Resistor             | 22 kΩ        | Transistor base drive          $
-| 1   | Resistor             | 1 MΩ         | 555 reset                      $
+| 1   | Resistor             | 22 kΩ        | Transistor base drive          
+| 1   | Resistor             | 1 MΩ         | 555 reset                      
 | 1   | Resistor             | 2.2 kΩ       | LED current limit                      $
 | 4   | Diodes               | 1N4148       | Signal steering (A/D/R + reset) |
-| 1   | Red LED              | Oval         | Output indicator               $
-| 1   | Pushbutton Switch    | N.O.         | Manual trigger                 $
+| 1   | Red LED              | Oval         | Output indicator               
+| 1   | Pushbutton Switch    | N.O.         | Manual trigger                 
 | 1   | IDC Header           | 10-pin (ML10)| Eurorack power                  |
 
 ---
