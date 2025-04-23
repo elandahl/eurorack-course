@@ -59,7 +59,6 @@ This folder includes the full set of KiCad source files:
 | 1   | Resistor             | 1 MΩ         | 555 reset                      $
 | 1   | Resistor             | 2.2 kΩ       | LED current limit                      $
 | 4   | Diodes               | 1N4148       | Signal steering (A/D/R + reset) |
-| 4   | Diodes               | 1N4148       | Signal steering (A/D/R + reset) |
 | 1   | Red LED              | Oval         | Output indicator               $
 | 1   | Pushbutton Switch    | N.O.         | Manual trigger                 $
 | 1   | IDC Header           | 10-pin (ML10)| Eurorack power                  |
