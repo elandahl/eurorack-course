@@ -47,19 +47,22 @@ This folder includes the full set of KiCad source files:
 |-----|----------------------|--------------|---------------------------------|
 | 1   | Timer IC             | TLC555       | CMOS version (not NE555)        |
 | 1   | Op-Amp               | TL072        | Dual op-amp, buffer and divider |
-| 2   | NPN Transistor       | 2N3904       | Gate pulse shaping              |
+| 3   | NPN Transistor       | 2N3904       | Gate pulse shaping              |
 | 3   | Potentiometer        | 1 MΩ Linear  | Attack, Decay, Release          |
 | 1   | Capacitor (polarized)| 10 µF        | TLC555 timing cap               |
 | 1   | Capacitor (bipolar)  | 2.2 µF       | Envelope integrator             |
-| 2   | Capacitor (ceramic)  | 100 nF       | Power supply decoupling         |
+| 7   | Capacitor (ceramic)  | 10 nF        | Supply and signal decoupling         |
 | 3   | Resistor             | 220 Ω        | Series with A/D/R pots          |
-| 2   | Resistor             | 10 kΩ        | Sustain voltage divider         |
-| 3   | Resistors            | 4.7 kΩ        | Transistor bias, 555 pull-up    |
-| 3   | Resistors            | 10–22 kΩ      | Input bias, base drive          |
+| 2   | Resistor             | 10 kΩ        | Input and transistor base         |
+| 4   | Resistors            | 4.7 kΩ       | Transistor bias, 555 pull-up    |
+| 1   | Resistor             | 22 kΩ        | Transistor base drive          $
+| 1   | Resistor             | 1 MΩ         | 555 reset                      $
+| 1   | Resistor             | 2.2 kΩ       | LED current limit                      $
 | 4   | Diodes               | 1N4148       | Signal steering (A/D/R + reset) |
-| 2   | Audio Jacks          | PJ398SM      | Gate input, envelope output     |
+| 4   | Diodes               | 1N4148       | Signal steering (A/D/R + reset) |
+| 1   | Red LED              | Oval         | Output indicator               $
+| 1   | Pushbutton Switch    | N.O.         | Manual trigger                 $
 | 1   | IDC Header           | 10-pin (ML10)| Eurorack power                  |
-| 2   | Mounting Holes       | 2.5 mm       | M2.5 standoffs recommended      |
 
 ---
 
