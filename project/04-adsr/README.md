@@ -49,7 +49,7 @@ This folder includes the full set of KiCad source files:
 | 1   | Op-Amp               | TL072        | Dual op-amp, buffer and divider |
 | 3   | NPN Transistor       | 2N3904       | Gate pulse shaping              |
 | 3   | Potentiometer        | 1 MΩ Linear  | Attack, Decay, Release          |
-| 1   | Potentiometer        | 10k Linear   | Sustain                      $
+| 1   | Potentiometer        | 10k Linear   | Sustain   
 | 1   | Capacitor (polarized)| 10 µF        | TLC555 timing cap               |
 | 1   | Capacitor (bipolar)  | 2.2 µF       | Envelope integrator             |
 | 7   | Capacitor (ceramic)  | 10 nF        | Supply and signal decoupling         |
