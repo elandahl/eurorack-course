@@ -49,6 +49,7 @@ This folder includes the full set of KiCad source files:
 | 1   | Op-Amp               | TL072        | Dual op-amp, buffer and divider |
 | 3   | NPN Transistor       | 2N3904       | Gate pulse shaping              |
 | 3   | Potentiometer        | 1 MΩ Linear  | Attack, Decay, Release          |
+| 1   | Potentiometer        | 10k Linear   | Sustain                      $
 | 1   | Capacitor (polarized)| 10 µF        | TLC555 timing cap               |
 | 1   | Capacitor (bipolar)  | 2.2 µF       | Envelope integrator             |
 | 7   | Capacitor (ceramic)  | 10 nF        | Supply and signal decoupling         |
@@ -57,8 +58,8 @@ This folder includes the full set of KiCad source files:
 | 4   | Resistors            | 4.7 kΩ       | Transistor bias, 555 pull-up    |
 | 1   | Resistor             | 22 kΩ        | Transistor base drive          
 | 1   | Resistor             | 1 MΩ         | 555 reset                      
-| 1   | Resistor             | 2.2 kΩ       | LED current limit                      $
-| 4   | Diodes               | 1N4148       | Signal steering (A/D/R + reset) |
+| 1   | Resistor             | 2.2 kΩ       | LED current limit                      
+| 5   | Diodes               | 1N4148       | Signal steering (A/D/R + reset) |
 | 1   | Red LED              | Oval         | Output indicator               
 | 1   | Pushbutton Switch    | N.O.         | Manual trigger                 
 | 1   | IDC Header           | 10-pin (ML10)| Eurorack power                  |
