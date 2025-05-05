@@ -10,20 +10,19 @@ Operational amplifiers ("Op-Amps") are versatile analog building blocks that amp
 
 - The basic ideal Op-Amp assumptions or "Golden Rules"
 - How an Op-Amp can be used as a **voltage buffer** (voltage follower)
-- How an Op-Amp can be used as a **amplifier**
-- How an Op-Amp can be used as a **comparator**
+- How an Op-Amp can be used as an **amplifier** or **comparator**
+- How Op-Amps are used in Eurorack modules like VCAs and noise circuits
 
-This foundational knowledge supports building more complex modules, including the White Noise Generator and the ADSR Envelope Generator.
+This foundational knowledge supports building more complex modules, including the White Noise Generator, ADSR, and VCA.
 
 ---
 
 ## 📖 Lecture Notes and Slides
 
-- 📄 [Op Amps Lecture Notes](231_Lecture03.tex) — LaTeX source
-- 📄 [Op Amps I Slides (PDF)](231_OpAmps_Slides.pdf) — ready for students
-- 📄 *Placeholder*: **Op Amps II** lecture notes and slides (coming soon)
-
-Future updates will extend these notes with non-inverting amplifiers, summing amplifiers, and real-world Op-Amp considerations.
+- 📄 [Op Amps I Lecture Notes](231_Lecture03.tex) — LaTeX source
+- 📄 [Op Amps I Slides](231_OpAmps_Slides.pdf) — ready for students
+- 📄 [Op Amps II Lecture Notes](231_OpAmps2.tex) — LaTeX source
+- 📄 [Op Amps II Slides](231_OpAmps2.pdf) — ready for students
 
 ---
 
@@ -38,13 +37,13 @@ These videos introduce the key idea of the Op-Amp voltage follower and why it’
 
 ## 📚 Connections to Projects
 
-This concept is prerequisite for:
+This topic is a required prerequisite for:
 
 - [White Noise Generator](https://github.com/elandahl/eurorack-course/blob/main/project/03-white-noise-generator/README.md)
 - [ADSR Envelope Generator](https://github.com/elandahl/eurorack-course/blob/main/project/04-adsr/README.md)
 - [VCA Module](https://github.com/elandahl/eurorack-course/blob/main/project/05-vca/README.md)
 
-Understanding Op-Amps is also fundamental for later circuits involving AC signals and filtering.
+Op-Amps also lay the groundwork for understanding active filters and future signal processing modules.
 
 ---
 
